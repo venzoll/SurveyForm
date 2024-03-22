@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This is a survey form in CSS education</p>
+    <form id="survey-form" method="post" action="https://register-demo.freecodecamp.org">
+      <fieldset>
+        <label id="name-label" for="name"
+          >Name:
+          <input id="name" name="name" type="text" placeholder="Name" required/>
+        </label>
+        <label id="email-label" for="email"
+          >Email:
+          <input id="email" name="email" type="email" placeholder="Email" required
+          /></label>
+     <label id="number-label" for="number"
+          >Age (optional):
+          <input id="number" type="number" name="number" min="1" max="120" placeholder="Age"
+        /></label>
+      </fieldset>
+       <label for="describing"
+          >Which option best describes your current role?
+          <select id="dropdown" name="describing">
+            <option value="1">Select current role</option>
+            <option value="Student">Student</option>
+            <option value="FullTime">Full Time Job</option>
+            <option value="Learner">Full Time Learner</option>
+            <option value="No">Prefer not to say</option>
+            <option value="Other">Other</option>
+          </select>
+        </label>
+      <fieldset>
+        <legend>Would you recommend freeCodeCamp to a friend?</legend>
+        <label for="definitely"
+          ><input
+            id="definitely"
+            type="radio"
+            name="recommendation"
+            class="inline"
+            value="definitely"
+            checked
+          />
+          Definitely</label
+        >
+        <label for="maybe"
+          ><input
+            id="maybe"
+            type="radio"
+            name="recommendation"
+            class="inline"
+            value="maybe"
+          />
+          Maybe</label
+        >
+        <label for="notSure"
+          ><input
+            id="notSure"
+            type="radio"
+            name="recommendation"
+            class="inline"
+            value="notSure"
+          />
+          Not sure</label
+        >
+      </fieldset>
+      <fieldset>
+      <label for="referrer"
+          >What is your favorite feature of freeCodeCamp?
+          <select id="referrer" name="referrer">
+            <option value="">Select an option</option>
+            <option value="1">Challenges</option>
+            <option value="2">Projects</option>
+            <option value="3">Community</option>
+            <option value="4">Open source</option>
+            
+<label for="thingsToImprove">
+        
+        What would you like to see improved? (Check all that apply)</a >
+        <input
+          class="inline"
+          id="thingsToImprove"
+          type="checkbox"
+          name="thingsToImprove"
+          value="Front-end Projects"
+        />Front-end Projects <br>
+          <input
+          class="inline"
+          id="thingsToImprove"
+          type="checkbox"
+          name="thingsToImprove"
+          value="Back-end Projects"
+        />Back-end Projects<br>
+          <input
+          class="inline"
+          id="thingsToImprove"
+          type="checkbox"
+          name="thingsToImprove"
+          value="Data Visualization"
+        />Data Visualization<br>
+          <input
+          class="inline"
+          id="thingsToImprove"
+          type="checkbox"
+          name="thingsToImprove"
+          value="Challenges"
+        />Challenges<br>
+          <input
+          class="inline"
+          id="thingsToImprove"
+          type="checkbox"
+        
+          name="thingsToImprove"
+          value="Open Source Community"
+        />Open Source Community<br>
+          <input
+          class="inline"
+          id="thingsToImprove"
+          type="checkbox"
+          
+          name="thingsToImprove"
+          value="Gitter help rooms"
+        />Gitter help rooms<br>
+          <input
+          class="inline"
+          id="thingsToImprove"
+          type="checkbox"
+          
+          name="thingsToImprove"
+          value="Videos"
+        />Videos<br>
+          <input
+          class="inline"
+          id="thingsToImprove"
+          type="checkbox"
+          
+          name="thingsToImprove"
+          value="City Meetups"
+        />City Meetups<br>
+          <input
+          class="inline"
+          id="thingsToImprove"
+          type="checkbox"
+          
+          name="thingsToImprove"
+          value="Wiki"
+        />Wiki<br>
+          <input
+          class="inline"
+          id="thingsToImprove"
+          type="checkbox"
+          
+          name="thingsToImprove"
+          value="Forum"
+        />Forum<br>
+          <input
+          class="inline"
+          id="thingsToImprove"
+          type="checkbox"
+          
+          name="thingsToImprove"
+          value="Additional Courses"
+        />Additional Courses
+
+      </label>
+<label for="bio"
+          >Any comments or suggestions?
+          <textarea
+            id="bio"
+            name="bio"
+            rows="3"
+            cols="30"
+            placeholder="I like coding on the beach..."
+          ></textarea>
+        </label>
+        
+      </fieldset>
+      
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
